@@ -1,0 +1,31 @@
+#register {
+    div {
+        overflow: hidden;
+        section:nth-child(even) {
+            background-image: url("../../assets/art1.jpg");
+            background-size: cover;
+            background-position: center;
+            overflow: hidden !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #register {
+        div {
+            section:nth-child(odd) {
+                width: 100%;
+                
+            }
+            section:nth-child(even) {
+                display: none;
+            }
+        }
+
+        #register-box {
+            height: 600px;
+            max-width: 500px;
+        }
+    }
+    
+}
